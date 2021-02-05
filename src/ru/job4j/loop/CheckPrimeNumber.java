@@ -9,6 +9,9 @@ public class CheckPrimeNumber {
                 break;
             }
         }
+        if (number==1){
+            prime = false;
+        }
         return prime;
     }
 }
