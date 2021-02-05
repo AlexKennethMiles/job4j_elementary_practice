@@ -25,8 +25,14 @@ public class AttackRookTest {
     }
 
     @Test
-    public void checkFalse1() {
+    public void checkFalse2() {
         boolean check = AttackRook.check("F5", "C8");
+        assertThat(check, is(false));
+    }
+
+    @Test
+    public void checkFalse1() {
+        boolean check = AttackRook.check("D3", "D3");
         assertThat(check, is(false));
     }
 }
