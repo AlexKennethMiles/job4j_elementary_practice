@@ -17,5 +17,13 @@ public class ArrayDefinition {
         for (String name : names) {
             System.out.println(name);
         }
+        System.out.println("===");
+        int[] numbers = new int[5];
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = i * 2 + 3;
+        }
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
     }
 }
