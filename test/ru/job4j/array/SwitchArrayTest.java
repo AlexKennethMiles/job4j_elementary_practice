@@ -29,6 +29,7 @@ public class SwitchArrayTest {
         int[] rsl = SwitchArray.swap(input, 0, 0);
         assertThat(rsl, is(expect));
     }
+
     @Test
     public void whenSwap4to1() {
         int[] input = {0, 1, 2, 3, 4};
