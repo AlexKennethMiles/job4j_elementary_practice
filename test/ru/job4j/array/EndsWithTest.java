@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class EndsWithTest {
     @Test
-    public void whenEndWithPrefixThenTrue1() {
+    public void whenEndWithPostfixThenTrue1() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] post = {'l', 'o'};
         boolean rsl = EndsWith.endsWith(word, post);
@@ -15,7 +15,7 @@ public class EndsWithTest {
     }
 
     @Test
-    public void whenEndWithPrefixThenTrue2() {
+    public void whenEndWithPostfixThenTrue2() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] post = {'H', 'e', 'l', 'l', 'o'};
         boolean rsl = EndsWith.endsWith(word, post);
@@ -23,7 +23,7 @@ public class EndsWithTest {
     }
 
     @Test
-    public void whenEndWithPrefixThenTrue3() {
+    public void whenEndWithPostfixThenTrue3() {
         char[] word = {'o'};
         char[] post = {'o'};
         boolean rsl = EndsWith.endsWith(word, post);
@@ -31,7 +31,7 @@ public class EndsWithTest {
     }
 
     @Test
-    public void whenEndWithPrefixThenTrueAdditional1() {
+    public void whenEndWithPostfixThenTrueAdditional1() {
         char[] word = {'o'};
         char[] post = {};
         boolean rsl = EndsWith.endsWith(word, post);
@@ -39,7 +39,7 @@ public class EndsWithTest {
     }
 
     @Test
-    public void whenEndWithPrefixThenTrueAdditional2() {
+    public void whenEndWithPostfixThenTrueAdditional2() {
         char[] word = {};
         char[] post = {};
         boolean rsl = EndsWith.endsWith(word, post);
@@ -47,7 +47,7 @@ public class EndsWithTest {
     }
 
     @Test
-    public void whenNotStartWithPrefixThenFalse1() {
+    public void whenNotStartWithPostfixThenFalse1() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] post = {'l', 'e'};
         boolean rsl = EndsWith.endsWith(word, post);
@@ -55,7 +55,7 @@ public class EndsWithTest {
     }
 
     @Test
-    public void whenNotStartWithPrefixThenFalse2() {
+    public void whenNotStartWithPostfixThenFalse2() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] post = {'H', 'e', 'l', 'l', 'e'};
         boolean rsl = EndsWith.endsWith(word, post);
@@ -63,7 +63,7 @@ public class EndsWithTest {
     }
 
     @Test
-    public void whenNotStartWithPrefixThenFalse3() {
+    public void whenNotStartWithPostfixThenFalse3() {
         char[] word = {'o'};
         char[] post = {'e'};
         boolean rsl = EndsWith.endsWith(word, post);
