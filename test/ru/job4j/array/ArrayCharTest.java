@@ -13,6 +13,7 @@ public class ArrayCharTest {
         boolean rsl = ArrayChar.startWith(word, pref);
         assertThat(rsl, is(true));
     }
+
     @Test
     public void whenStartWithPrefixThenTrue2() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
