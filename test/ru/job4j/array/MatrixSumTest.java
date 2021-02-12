@@ -56,4 +56,12 @@ public class MatrixSumTest {
         int expect = 45;
         assertThat(rsl, is(expect));
     }
+
+    @Test
+    public void whenZero() {
+        int[][] input = {{}};
+        int rsl = MatrixSum.sum(input);
+        int expect = 0;
+        assertThat(rsl, is(expect));
+    }
 }
