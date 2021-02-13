@@ -71,4 +71,36 @@ public class MatrixCheckTest {
         boolean rsl = MatrixCheck.monoVertical(input, 1);
         assertThat(rsl, is(false));
     }
+
+    @Test
+    public void whenDiagonal() {
+        char[][] input = {
+                {'X', ' ', ' '},
+                {' ', 'X', ' '},
+                {' ', ' ', 'X'}
+        };
+        char[] rsl = MatrixCheck.extractDiagonal(input);
+        char[] expect = {'X', 'X', 'X'};
+        assertThat(rsl, is(expect));
+    }
+
+    @Test
+    public void whenDiagonalIsDifferent() {
+        char[][] input = {
+                {'X', ' ', ' '},
+                {' ', 'Y', ' '},
+                {' ', ' ', 'Z'}
+        };
+        char[] rsl = MatrixCheck.extractDiagonal(input);
+        char[] expect = {'X', 'Y', 'Z'};
+        assertThat(rsl, is(expect));
+    }
+
+    @Test
+    public void whenDiagonalOfOne() {
+        char[][] input = {{'X'}};
+        char[] rsl = MatrixCheck.extractDiagonal(input);
+        char[] expect = {'X'};
+        assertThat(rsl, is(expect));
+    }
 }
