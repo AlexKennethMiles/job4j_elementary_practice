@@ -25,7 +25,6 @@ public class MatrixTest {
         assertThat(rsl, is(expect));
     }
 
-
     @Test
     public void when9on9() {
         int size = 9;
