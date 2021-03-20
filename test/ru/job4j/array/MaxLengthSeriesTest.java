@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MaxLengthSeriesTest {
-
     @Test
     public void test() {
         assertEquals(1, MaxLengthSeries.find(new int[]{1}));
@@ -15,5 +14,4 @@ public class MaxLengthSeriesTest {
         assertEquals(4, MaxLengthSeries.find(new int[]{1, 2, 1, 1, 2, 3}));
         assertEquals(1, MaxLengthSeries.find(new int[]{3, 2, 1}));
     }
-
 }

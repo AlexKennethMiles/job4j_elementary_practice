@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TriangleMatrixTest {
-
     @Test
     public void whenRows1() {
         int[][] result = {
@@ -29,5 +28,4 @@ public class TriangleMatrixTest {
         };
         assertArrayEquals(result, TriangleMatrix.rows(3));
     }
-
 }

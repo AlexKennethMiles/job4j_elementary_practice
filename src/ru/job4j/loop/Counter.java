@@ -33,6 +33,5 @@ public class Counter {
         System.out.println(sumByEven(2, 0));
         System.out.println(sumByEven(-3, 4));
         System.out.println(sumByEven(-5, 8));
-
     }
 }

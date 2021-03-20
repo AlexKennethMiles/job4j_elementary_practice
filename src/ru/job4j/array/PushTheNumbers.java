@@ -4,7 +4,6 @@ public class PushTheNumbers {
     public static void push(int[][] array, int row, int column) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-
                 if (row == i && column - 1 == j) {
                     for (int k = 0; k < column; k++) {
                         array[row][k] = array[row][k + 1];

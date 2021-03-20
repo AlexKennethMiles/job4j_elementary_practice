@@ -19,7 +19,6 @@ public class CheckSumIndexes {
             }
             newSize += data[i].length;
         }
-
         int[] rsl = new int[newSize];
         int count = 0;
         for (int i = 0; i < data.length; i++) {
@@ -28,7 +27,6 @@ public class CheckSumIndexes {
                 count++;
             }
         }
-
         return rsl;
     }
 }

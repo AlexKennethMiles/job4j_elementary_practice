@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RightShiftTest {
-
     @Test
     public void testWhenShift1() {
         int[] input = {1, 2, 3, 4, 5};

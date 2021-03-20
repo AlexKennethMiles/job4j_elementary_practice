@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class IndexOfWithCountTest {
-
     @Test
     public void whenNotContain() {
         assertEquals(-1, IndexOfWithCount.indexOf(
@@ -32,5 +31,4 @@ public class IndexOfWithCountTest {
                 2
         ));
     }
-
 }

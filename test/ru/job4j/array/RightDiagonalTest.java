@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RightDiagonalTest {
-
     @Test
     public void test() {
         int[][] data = {
@@ -16,5 +15,4 @@ public class RightDiagonalTest {
         int[] expected = {3, 5, 7};
         assertArrayEquals(expected, RightDiagonal.diagonal(data));
     }
-
 }

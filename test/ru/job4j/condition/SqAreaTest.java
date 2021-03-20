@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SqAreaTest {
-
     @Test
     public void squareP4K1() {
         double expected = 1.0;

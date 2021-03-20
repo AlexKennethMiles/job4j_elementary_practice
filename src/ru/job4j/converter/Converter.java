@@ -24,7 +24,6 @@ public class Converter {
         ruble = Converter.euroToRuble(in);
         testStatus = ruble == expected;
         System.out.println("5 euro are " + ruble + " ruble. Test status : " + testStatus + '.');
-        // Since we work with int, we will not be able to transfer from dollars to euros and vice versa.
     }
 
     public static int rubleToEuro(int value) {

@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RandomDreamTest {
-
     @Test
     public void test() {
         String[] prizes = {"car", "ticket", "flat", "house"};
@@ -24,5 +23,4 @@ public class RandomDreamTest {
         assertEquals("flat", RandomDream.random(prizes, 11));
         assertEquals("house", RandomDream.random(prizes, 12));
     }
-
 }

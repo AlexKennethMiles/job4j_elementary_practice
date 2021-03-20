@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TranspositionTest {
-
     @Test
     public void whenSquare() {
         int[][] input = {
@@ -46,5 +45,4 @@ public class TranspositionTest {
         };
         assertArrayEquals(expect, Transposition.convert(input));
     }
-
 }

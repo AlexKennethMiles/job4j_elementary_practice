@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class SwapRowsTest {
-
     @Test
     public void test() {
         int[][] data = {
@@ -21,5 +20,4 @@ public class SwapRowsTest {
                 data
         );
     }
-
 }

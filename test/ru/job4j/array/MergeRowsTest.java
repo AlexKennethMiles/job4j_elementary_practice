@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MergeRowsTest {
-
     @Test
     public void test() {
         int[][] input = {
@@ -17,5 +16,4 @@ public class MergeRowsTest {
         int[] out = MergeRows.merge(input);
         assertArrayEquals(expected, out);
     }
-
 }
